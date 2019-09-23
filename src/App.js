@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
@@ -9,6 +10,8 @@ import ProductsPage from './pages/Product/Products';
 import ProductPage from './pages/Product/Product';
 import EditProductPage from './pages/Product/EditProduct';
 import AuthPage from './pages/Auth/Auth';
+
+require('dotenv').config();
 
 class App extends Component {
   state = {
